@@ -15,7 +15,7 @@ Then run a script:
 
 ```bash
 
-python3 wifi-scan
+python3 wifi-scan.py
 
 ```
 
@@ -27,8 +27,8 @@ How to use it:
 ```bash
 python3 wifi-scan.py
 
-{'SOME WIFI': {'BSSID': '11:11:11:11:11:11', 'RSSI': -45},
- 'ANOTHER_WIFI': {'BSSID': '11:11:11:11:11:11', 'RSSI': -57}}
+{'SOME WIFI': {'RSSI': -45, 'channel': balabala, 'noise': -92},
+ 'ANOTHER_WIFI': {'RSSI': -50, 'channel': qwqwqwq, 'noise': -92}}
 
 ```
 
@@ -37,6 +37,6 @@ Wifi-scan.py support `filter` argument, which can be used to find any particular
 ```bash
 python3 wifi-scan.py -f SOME_WIFI
 
-{'SOME WIFI': {'BSSID': '11:11:11:11:11:11', 'RSSI': -45}
+{'SOME WIFI': {'RSSI': -45, 'channel': balabala, 'noise': -92}
 
 ```
