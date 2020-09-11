@@ -21,7 +21,8 @@ def scan(concrete_ssid=None):
     return {
         i.ssid(): {
             'RSSI': i.rssiValue(),
-            'BSSID': i.bssid()
+            'channel': i.wlanChannel(),
+            'noise':i.noiseMeasurement(),
         }
         for i in networks[0].allObjects() if i.ssid() is not None
     }
